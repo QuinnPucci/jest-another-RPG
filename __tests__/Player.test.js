@@ -37,14 +37,14 @@ test('gets inventory from player or returns false', () => {
     expect(player.getInventory()).toEqual(false)
 })
 
-// test to check players health value
+// test for check players health value method
 test("gets player's health value", () => {
     const player = new Player ('Dave')
 
     expect(player.getHealth()).toEqual(expect.stringContaining(player.health.toString()))
 })
 
-// test to check if player is alive
+// test for check if player is alive method
 test('checks if player is alive or not', () => {
     const player = new Player('Dave')
 
@@ -53,4 +53,18 @@ test('checks if player is alive or not', () => {
     player.health = 0 
 
     expect(player.isAlive()).toBeFalsy()
+})
+
+// test for reduce health method
+test("subtracts from player's health", () => {
+    const player = new Player('Dave')
+    const oldHealth = player.health
+
+    player.reduceHealth(5)
+
+    expect(player.health).toBe(oldHealth - 5)
+
+    player.reduceHealth(99999)
+
+    expect(player.health).toBe(0)
 })
