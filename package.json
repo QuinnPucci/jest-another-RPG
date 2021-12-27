@@ -1,0 +1,34 @@
+{
+  "name": "jest-another-rpg",
+  "version": "1.0.0",
+  "description": "Role Playing Game using node.js - OOP and TDD showcase",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QuinnPucci/jest-another-RPG.git"
+  },
+  "keywords": [
+    "RPG",
+    "node.js",
+    "node",
+    "js",
+    "javascript",
+    "OOP",
+    "TDD"
+  ],
+  "author": "Quinn Pucci",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/QuinnPucci/jest-another-RPG/issues"
+  },
+  "homepage": "https://github.com/QuinnPucci/jest-another-RPG#readme",
+  "devDependencies": {
+    "jest": "^27.4.5"
+  },
+  "dependencies": {
+    "inquirer": "^8.2.0"
+  }
+}
